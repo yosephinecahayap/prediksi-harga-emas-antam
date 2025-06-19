@@ -74,7 +74,7 @@ if tgl in future_df['Tanggal_only'].values:
     st.success(f"Prediksi harga emas Antam pada tanggal {tgl} adalah **Rp{harga:,.0f}**")
     st.info(f"MAE (Rata-rata selisih prediksi): Rp{mae_test:,.0f}")
     st.info(f"RMSE (Akar dari rata-rata error): Rp{rmse_test:,.0f}")
-    st.info(f"R2 Score (Keakuratan model): {r2_test:.4f}")
+    st.info(f"R² Score (Keakuratan model): {r2_test:.4f}")
 else:
     st.warning(f"Tanggal tidak tersedia dalam rentang prediksi ({future_df['Tanggal_only'].min()} s.d. {future_df['Tanggal_only'].max()})")
 
